@@ -1,0 +1,248 @@
+/* Global styles*/
+
+html {
+    font-size: 16px;
+}
+ body {
+    background-color:ghostwhite;
+    padding-top: 5px;
+    color:#2a3d8c;
+ }
+
+ /* ONLY LOGO */
+
+ .logo img{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 2px;        
+    
+ }
+
+/*  HEADER SECTION ghostwhite*/
+nav {
+    height: 150px;  
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 400;
+    border-bottom: 2px solid #282B37; 
+    position: fixed;
+    width: 100%;
+    background-color: #2a3d8c;     
+}
+nav.top {
+    color:aliceblue;
+    text-decoration: none;
+}
+.top {
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;     
+}
+.top ul li {
+    margin-right: 20px; 
+}
+
+.top ul li:last-child {
+    margin-right: 0;
+}
+.top ul li a {
+    color:whitesmoke;
+    text-decoration: none;
+}
+.top ul li a:hover {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 3rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 90px;
+    background-color:lavender;
+    font-family: "Alumni Sans Inline One", sans-serif;
+    font-weight: 400;
+}
+
+/* Website Introduction Text */
+.about {
+    font-family: "Thasadith", sans-serif;
+    font-weight: 400;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    line-height: 2.5rem;
+    margin-top: 180px;
+    font-size: 1.45rem;
+}
+.about h2 {
+    font-size: 4.5rem;
+    font-style: bold;
+    text-align: center;
+    color:#2a3d8c;
+}
+
+/* new Catalog Section */
+.catalog {
+    background-color: whitesmoke;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px; /* Adjust padding to prevent overlap with the fixed header */
+}
+
+.catalog h2 {
+    margin-bottom: 0; /* Remove spacing below the h2 */
+    font-size: 3.3rem;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 200;
+    color: #2a3d8c;
+    text-align: center; /* Center align the title */
+    width: 100%; /* Ensure the title takes the full width */
+    margin-top: 0;
+    opacity: 0.8;
+}
+
+.catalog .description {
+    text-align: center;
+}
+
+.catalog .description h3 {
+    margin-top: 0; /* Add margin to separate the title from the image */
+    padding: 5px;
+    color: #2a3d8c;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.catalog .description img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin-top: 0; /* Adjust margin to prevent overlap */
+}
+
+.catalog #web img {
+    width: 400px;
+    height: 420px;
+    border: 50px solid  lavender;
+}
+
+.catalog #course img {
+    width: 400px; 
+    height: 420px;
+    border: 50px solid  lavender;
+}
+
+.catalog #ai img {
+    width: 400px;
+    height: 420px;
+    border: 50px solid  lavender;
+} 
+
+
+/* NEW Teammates Section */
+.teammates {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 5px; /* Adjust padding to prevent overlap with the fixed header */
+    margin-left: 20px;
+}
+
+.teammates h2 {
+    margin-bottom: 5px; /* Add some spacing below the h2 */
+    font-size: 3.2rem;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 200;
+    color: #2a3d8c;
+    opacity: 0.8;
+    text-align: center;
+    width: 100%; /* Ensure the title takes the full width */
+    margin-top: 10px;
+}
+
+.teammates .team {
+    text-align: center;
+}
+
+.teammates .team img {
+    max-width: 100%; /* To make images responsive for any  screen size */
+    height: auto;
+    margin-top: 20px; /* Adjust margin to prevent overlap */
+}
+
+.teammates .team h3 {
+    margin-top: 20px; /* To separate the title from the image */
+}
+
+.teammates #decaprio img {
+    width: 400px;
+    height: 450px;
+    border: 2px solid #2a3d8c;
+    margin-top: 220px;
+    border-radius: 40px;
+}
+
+.teammates #murphy img {
+    width: 400px; 
+    height: 450px;
+    border: 2px solid #2a3d8c;
+    margin-top: 220px;
+    border-radius: 40px;
+}
+
+.teammates #kate img {
+    width: 415px;
+    height: 510px;
+    border: 2px solid #2a3d8c;
+    border-radius: 40px;
+}
+
+.contact footer {
+    background-color:rgba(20, 2, 41, 0.122);
+    padding: 2px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    font-family: "Thasadith", sans-serif;
+    line-height: 0.3px;
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 1024px) {
+    .catalog .description img {
+        max-width: 80%; /* Decrease image size */
+    }
+    .catalog .description h3 {
+        margin-top: 20px; /* Increase spacing between image and title */
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .catalog .description img {
+        max-width: 100%; /* Further reduce image size */
+    }
+    .catalog .description h3 {
+        margin-top: 10px;
+    }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1025px) {
+}
