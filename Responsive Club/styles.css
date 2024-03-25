@@ -306,3 +306,17 @@ footer a {
 footer a:hover {
     color: rgb(239, 102, 16);
 }
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+    footer p {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    footer img {
+        width: 40%;
+        padding-top: 0; 
+    }
+}
